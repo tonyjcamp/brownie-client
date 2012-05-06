@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'brownie-client' target in the 'brownie-client' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
