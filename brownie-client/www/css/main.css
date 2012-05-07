@@ -1,0 +1,173 @@
+body {
+	background: #eae7ec;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+#nav-main {
+	background: url("../img/bg-nav.png") no-repeat;
+	color: #fff;
+	display: block;
+	height: 88px;
+	width: 640px;
+}
+
+#nav-main .back {
+	background: url("../img/button-back.png") no-repeat;
+	border: none;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	height: 59px;
+	margin: 14px 0 0 18px;
+	padding-left: 16px;
+	text-shadow: -1px -1px 1px #222;
+	width: 99px;
+}
+
+#nav-main h1 {
+	display: inline-block;
+}
+
+#br-images {
+	height: 372px;
+	position: relative;
+	top: -2px;
+}
+
+#br-images ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-indent: none;
+}
+
+#br-images .icon-photo {
+	background-image: none;
+	height: 93px;
+	position: absolute;
+	right: 35px;
+	top: 18px;
+	width: 107px;
+}
+
+/* Retina Screens Only */
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+	#nav-main {
+		background-size: 50%;
+		height: 44px;
+	}
+	
+	#nav-main h1 {
+		font-size: 18px;
+		margin: 0 auto;
+	}
+
+	#nav-main .back {
+		background-size: 100%;
+		font-size: 12px;
+		margin: 3px 0 3px 7px;
+		height: 33px;
+		width: 55px;
+	}
+
+/* Bathroom (br) image slider */
+	#br-images {
+		height: 186px;
+		top: -2px;
+		left: 0;
+	}
+
+	#br-images .icon-photo {
+		top: 9px;
+		height: 47px;
+		left: 250px;
+	}
+
+	#br-images .slider {
+		height: 186px;
+		width: 320px;
+	}
+
+	#br-images .slider p {
+		color: #fff;
+		font-family: 'Nunito', sans-serif;
+		font-size: 12px;
+		margin-top: -40px;
+		position: relative;
+		text-align: center;	text-shadow: -1px 0px 4px #888;
+		z-index: 2;
+	}
+
+	#br-images .slider li img {
+		display: block;
+		position: relative;
+		height: 186px;
+		width: 320px !important;
+	}
+
+	#br-images nav {
+		background: rgba(0,0,0, .2);
+		height: 20px;
+		margin-top: -20px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		z-index: 2;
+	}
+
+	#br-images nav ul {
+		display: inline-block;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#br-images nav ul li {
+		background: rgba(0,0,0, .2);
+		border-radius: 10px;
+		float: left;
+		height: 8px;
+		margin: 0 5px;
+		text-align: center;
+		width: 8px;
+	}
+
+	#br-images nav ul .active {
+		background: rgba(255,255,255, 1);
+	}
+
+	#br-images nav ul li a {
+		font-size: 1px;
+	}
+/* End br styles */
+
+/* bathroom (br) deets */
+	#br-deets {
+		color: #b7b7b7;
+		padding: 0 10px;
+	}
+
+	#br-deets h1 {
+		color: #444;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 22px;
+		margin: 0;
+		padding: 0;
+		text-shadow: none;
+	}
+
+	#br-deets p {
+		font-size: 11px;
+		line-height: 13px;
+		margin: 0;
+		padding: 0;
+	}
+
+}
