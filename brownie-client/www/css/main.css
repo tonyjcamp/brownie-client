@@ -2,6 +2,8 @@ body {
 	background: #eae7ec;
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
+	overflow: hidden;
+	width: 320px;
 }
 
 h1, p {
@@ -12,15 +14,13 @@ h1, p {
 	background: url("../img/bg-nav.png") no-repeat;
 	color: #fff;
 	display: block;
-	height: 88px;
-	width: 640px;
+
 }
 
 #nav-main .back {
 	background: url("../img/button-back.png") no-repeat;
 	border: none;
 	color: #fff;
-	font-family: 'Nunito', sans-serif;
 	font-size: 18px;
 	height: 59px;
 	margin: 14px 0 0 18px;
@@ -36,7 +36,9 @@ h1, p {
 #br-images {
 	height: 372px;
 	position: relative;
+	overflow: hidden;
 	top: -2px;
+	width: 640px;
 }
 
 #br-images ul {
@@ -53,14 +55,52 @@ h1, p {
 	right: 35px;
 	top: 18px;
 	width: 107px;
+	z-index: 999;
+}
+
+#br-images .slider {
+	position: relative;
+    top: 0;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 3000px;
+    height: 372px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style:none;
+}
+
+#br-images .slider li {
+	float: left;
+	width: 320px;
+}
+
+#br-images nav {
+	background: rgba(0,0,0, 1);
+	bottom: 0;
+	height: 20px;
+	margin-top: -20px;
+	position: absolute;
+	text-align: center;
+	width: 640px;
+	z-index: 999;
 }
 
 /* Retina Screens Only */
 @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 	
+	body {
+		max-width: 320px;
+		overflow: hidden;
+		width: 320px;
+	}
+
 	#nav-main {
-		background-size: 50%;
 		height: 44px;
+		width: 320px;
 	}
 	
 	#nav-main h1 {
@@ -79,24 +119,23 @@ h1, p {
 /* Bathroom (br) image slider */
 	#br-images {
 		height: 186px;
-		top: -2px;
 		left: 0;
+		overflow: hidden;
+		position: relative;
+		top: -2px;
+		width: 320px;
 	}
 
 	#br-images .icon-photo {
 		top: 9px;
 		height: 47px;
 		left: 250px;
-	}
-
-	#br-images .slider {
-		height: 186px;
-		width: 320px;
+		width: 54px;
+		z-index: 999;
 	}
 
 	#br-images .slider p {
 		color: #fff;
-		font-family: 'Nunito', sans-serif;
 		font-size: 12px;
 		margin-top: -40px;
 		position: relative;
@@ -112,19 +151,20 @@ h1, p {
 	}
 
 	#br-images nav {
-		background: rgba(0,0,0, .2);
+		background: rgba(0,0,0, 1);
 		height: 20px;
-		margin-top: -20px;
-		position: relative;
+		position: absolute;
 		text-align: center;
-		width: 100%;
-		z-index: 2;
+		top: 0;
+		width: 320px;
+		z-index: 999;
 	}
 
 	#br-images nav ul {
 		display: inline-block;
 		margin: 0 auto;
 		overflow: hidden;
+		z-index: 999;
 	}
 
 	#br-images nav ul li {
@@ -148,8 +188,11 @@ h1, p {
 
 /* bathroom (br) deets */
 	#br-deets {
+		border-bottom: 1px solid #b5b7b7;
 		color: #b7b7b7;
-		padding: 0 10px;
+		margin: 0;
+		padding: 10px 30px;
+		width: 260px;
 	}
 
 	#br-deets h1 {
@@ -168,6 +211,41 @@ h1, p {
 		line-height: 13px;
 		margin: 0;
 		padding: 0;
+	}
+
+/* ratings container */
+	#rating-slider {
+		border-top: 1px solid #fff;
+	}
+
+	#scores {
+		background: url(../img/bg-slider.png) no-repeat center;
+		background-size: 291px;
+		height: 27px;
+		list-style-type: none;
+		margin: 20px auto 0;
+		overflow: hidden;
+	}
+
+	#scores li {
+		float: left;
+		font-size: 10px;
+		margin: 0 7px;
+	}
+
+	#scores a {
+		color: #444;
+	}
+
+	.btn-submit {
+		background: url(../img/bg-rate-btn.gif) repeat-x;
+		border: 1px solid #101316;
+		color: #fff;
+		display: block;
+		height: 48px;
+		margin: 20px auto;
+		text-shadow: none;
+		width: 200px;
 	}
 
 }
