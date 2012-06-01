@@ -11,7 +11,8 @@ h1, p {
 	padding: 0;
 }
 #nav-main {
-	background: url("../img/bg-nav.png") no-repeat;
+	/*background: #2e2e35 url("../img/bg-nav.png") no-repeat;*/
+	background: #2e2e35;
 	color: #fff;
 	display: block;
 
@@ -153,7 +154,7 @@ h1, p {
 	#br-images nav {
 		background: rgba(0,0,0, 1);
 		height: 20px;
-		position: absolute;
+		position: relative;
 		text-align: center;
 		top: 0;
 		width: 320px;
@@ -216,21 +217,45 @@ h1, p {
 /* ratings container */
 	#rating-slider {
 		border-top: 1px solid #fff;
+		position: relative;
+	}
+
+	#scores-bg {
+		background: #dbdcdf;
+		border: 1px solid #c5c6ca;
+		border-radius: 10px;
+		bottom: -1px;
+		height: 15px;
+		position: absolute;
+		left: 4px;
+		width: 310px;
+		z-index: 1;
 	}
 
 	#scores {
-		background: url(../img/bg-slider.png) no-repeat center;
-		background-size: 291px;
-		height: 27px;
+/*		background: url(../img/bg-slider.png) no-repeat center;
+*/		background-size: 291px;
+		border-radius: 10px;
+		height: 37px;
 		list-style-type: none;
 		margin: 20px auto 0;
 		overflow: hidden;
+		position: relative;
+		z-index: 2;		
 	}
 
 	#scores li {
 		float: left;
 		font-size: 10px;
 		margin: 0 7px;
+		text-align: center;
+		width: 50px;
+	}
+
+	#scores label {
+		display: block;
+		font-size: 7px;
+		margin: 1px 0 0;
 	}
 
 	#scores a {
